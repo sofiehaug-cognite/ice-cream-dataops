@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ice-cream-dataops"
+version = "0.1.0"
+description = ""
+authors = ["sofiehaug-cognite <sofie.haug@cognite.com>"]
+readme = "README.md"
+packages = [{include = "ice_cream_dataops"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+retry = "^0.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
