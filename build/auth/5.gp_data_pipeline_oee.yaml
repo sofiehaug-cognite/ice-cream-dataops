@@ -1,0 +1,29 @@
+name: gp_data_pipeline_oee
+sourceId: 3cc370d1-4f37-41c7-a9b4-d354e3d7cb79
+metadata:
+  origin: cognite-toolkit
+capabilities:
+  - projectsAcl:
+      actions: [LIST, READ]
+      scope:
+        all: {}
+  - timeSeriesAcl:
+      actions: [READ]
+      scope:
+        datasetScope:
+          ids: [ds_ice_cream_api]
+  - timeSeriesAcl:
+      actions: [READ, WRITE]
+      scope:
+        datasetScope:
+          ids: [ds_uc_oee]
+  - datasetsAcl:
+      actions: [READ]
+      scope:
+        idScope:
+          ids: [ds_uc_oee, ds_ice_cream_api]
+  - assetsAcl:
+      actions: [READ]
+      scope:
+        datasetScope:
+          ids: [ds_ice_cream_api]
