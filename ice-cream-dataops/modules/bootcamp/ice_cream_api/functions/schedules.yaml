@@ -4,12 +4,122 @@
   authentication:
     clientId: {{ icapi_extractors_client_id }}
     clientSecret: {{ icapi_extractors_client_secret }}
-- name: Backfill once a day for the last 30 days (gap filling)
+- name: Backfill Oslo once a day for the last 30 days (gap filling)
   functionExternalId: icapi_datapoints_extractor
   cronExpression: "0 0 * * *"
   data:
     backfill: True
     hours: 720
+    sites: 
+    - Oslo
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }} 
+
+-  name: Backfill Houston once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Houston
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+
+-  name: Backfill Kuala Lumpur once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Kuala Lumpur
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+    
+-  name: Backfill Hannover once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Hannover
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+
+-  name: Backfill Nuremberg once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Nuremberg
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}    
+
+-  name: Backfill Marseille once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Marseille
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+
+-  name: Backfill Sao Paulo once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Sao Paulo
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+  
+-  name: Backfill Chicago once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Chicago
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+
+-  name: Backfill Rotterdam once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - Rotterdam
+  authentication:
+    clientId: {{ icapi_extractors_client_id }}
+    clientSecret: {{ icapi_extractors_client_secret }}
+
+-  name: Backfill London once a day for the last 30 days (gap filling)
+  functionExternalId: icapi_datapoints_extractor
+  cronExpression: "0 0 * * *"
+  data:
+    backfill: True
+    hours: 720
+    sites: 
+    - London
   authentication:
     clientId: {{ icapi_extractors_client_id }}
     clientSecret: {{ icapi_extractors_client_secret }}

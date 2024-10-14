@@ -28,7 +28,7 @@ variables:
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
       readonly_source_id: 944a1483-4e69-4e43-a156-48f6cfabbf7f
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      icapi_extractors_source_id: 944a1483-4e69-4e43-a156-48f6cfabbf7f
+      icapi_extractors_source_id: 03a95cad-8136-40dc-b6b8-9656876d0cb9
       # Client Ids
       data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID} # replaced by .env
       data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET} # replaced by .env
