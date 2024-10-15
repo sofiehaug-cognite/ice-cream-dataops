@@ -1,5 +1,5 @@
-name: 'icapi_extractor'
-sourceId: '{{ icapi_extractor_source_id }}'
+name: icapi_extractors
+sourceId: {{ icapi_extractors_source_id }}
 capabilities:
   - assetsAcl:
       actions: [READ, WRITE]
