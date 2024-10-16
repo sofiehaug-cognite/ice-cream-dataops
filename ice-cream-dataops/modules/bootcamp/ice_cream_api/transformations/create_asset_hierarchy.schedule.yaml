@@ -1,3 +1,0 @@
-externalId: 'create_asset_hierarchy'
-interval: "59 0 * * *"
-#isPaused: {{ pause_transformations }}
