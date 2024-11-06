@@ -18,7 +18,7 @@ def run_extractor(
     sites_df = pandas.read_csv(
         StringIO(sites_csv),
         sep=",",
-        usecols=["name", "external_id", "description", "metadata", "parent_external_id"]
+        usecols=["name", "labels", "external_id", "description", "metadata", "parent_external_id"]
     )
 
     client.raw.rows.insert_dataframe(
